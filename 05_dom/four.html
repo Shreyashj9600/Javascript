@@ -1,0 +1,37 @@
+<html>
+
+<head>
+    <title>remove dom element</title>
+</head>
+
+<body style="background-color: #212121; color: white;">
+    <ul class="language">
+        <li>javascript</li>
+    </ul>
+
+</body>
+
+<script>
+    function addName(langName) {
+
+        const li = document.createElement('li')
+        li.innerText = langName;
+
+        const UlMain = document.querySelector('.language');
+        UlMain.append(li)
+    }
+    addName('html')
+    addName('css')
+
+    // edit 
+
+    const firstName = document.querySelector('li:first-child')
+    firstName.innerHTML = 'typescript'
+
+    // remove 
+    const lastLang = document.querySelector('li:last-child')
+    lastLang.remove()
+
+</script>
+
+</html>
