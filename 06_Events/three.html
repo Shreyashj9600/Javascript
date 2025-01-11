@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Chai aur Javascript </h1>
+    <button id="Start">Start</button>
+    <button id="Stop">Stop</button>
+</body>
+<script>
+
+    let intervalId;
+
+    const sayNO = (srt) => {
+        console.log(srt, Math.random())
+    }
+
+    document.querySelector('#Start').addEventListener('click', () => {
+        intervalId = setInterval(sayNO, 1000, "Random no ")
+        console.log('START')
+    })
+
+    document.querySelector('#Stop').addEventListener('click', () => {
+        clearInterval(intervalId)
+        console.log('STOP')
+    })
+
+</script>
+
+</html>
