@@ -1,25 +1,7 @@
 let promise = new Promise((resolve, reject) => {
     console.log('I am a promise');
-    reject('some error')
-    
+    // reject('some error')
 })
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -35,7 +17,6 @@ function getData(dataId, getNextData) {
         }
     }, 1000)
 }
-
 
 // getData(1)
 // getData(2)
